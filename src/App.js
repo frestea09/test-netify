@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
       fetchData();
   }, []);
-  console.log(response)
+  // console.log(response)
   // let bilangan = [1,2,3,4,5]
   let tempData = response && response.map((item)=><DataPersonal key={item.userId} name={item.title}/>)
   // let temp = bilangan.map((item)=><li key={item}>{item}</li>)
